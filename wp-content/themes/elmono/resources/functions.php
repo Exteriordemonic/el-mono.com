@@ -90,3 +90,22 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+/*
+* This function take get_fields as attribute;
+*/
+if (!function_exists('has_fields_content')) :
+    function has_fields_content($field_objects, $excluded_fields = array())
+    {
+
+        $excluded_fields =  array_merge($excluded_fields, array('options_group'));
+        if($field_objects):
+        foreach ($field_objects as $name => $value) {
+        if (!in_array($name, $excluded_fields) && $value != null) {
+            return true;
+        }
+        }
+        endif;
+        return false;
+    }
+endif;

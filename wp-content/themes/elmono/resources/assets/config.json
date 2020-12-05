@@ -6,7 +6,8 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
-    ]
+    ],
+    "gutenberg": ["./styles/gutenberg.scss"]
   },
   "publicPath": "/wp-content/themes/elmono",
   "devUrl": "http://el-mono.com/",
