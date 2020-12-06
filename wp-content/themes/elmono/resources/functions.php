@@ -109,3 +109,8 @@ if (!function_exists('has_fields_content')) :
         return false;
     }
 endif;
+
+function image($id, $size, $class) 
+{
+    return wp_get_attachment_image($id, $size, false, ['class' => $class]);
+}
