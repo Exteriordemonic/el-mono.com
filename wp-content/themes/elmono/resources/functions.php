@@ -111,6 +111,54 @@ if (!function_exists('has_fields_content')) :
 endif;
 
 function image($id, $size, $class) 
-{
-    return wp_get_attachment_image($id, $size, false, ['class' => $class]);
+{   
+    if(strpos($class, 'img-cover')  !== false) {
+       return '<figure class="img-cover-wrapper">' . wp_get_attachment_image($id, $size, false, ['class' => $class]) . '</figure>';
+    } else {
+        return wp_get_attachment_image($id, $size, false, ['class' => $class]);
+    }
+}
+
+function text_color($color) 
+{   
+    $text_color = 'text-dark';
+
+    switch ($color) {
+        case 'bg-primary':
+            $text_color = "text-dark";
+            return $text_color;
+        case 'bg-secondary':
+            $text_color = "text-light";
+            return $text_color;
+        case 'bg-light':
+            $text_color = "text-dark";
+            return $text_color;
+        case 'bg-dark':
+            $text_color = "text-light";
+            return $text_color;
+    }
+
+    return $text_color;
+}
+
+function btn_color($color) 
+{   
+    $btn_color = 'btn-primary';
+
+    switch ($color) {
+        case 'bg-primary':
+            $btn_color = "btn-secondary";
+            return $btn_color;
+        case 'bg-secondary':
+            $btn_color = "btn-primary";
+            return $btn_color;
+        case 'bg-light':
+            $btn_color = "btn-primary";
+            return $btn_color;
+        case 'bg-dark':
+            $btn_color = "btn-primary";
+            return $btn_color;
+    }
+
+    return $btn_color;
 }

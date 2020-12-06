@@ -9,7 +9,7 @@
   PostTypes: page post
   SupportsAlign: center
   SupportsMode: true
-  SupportsMultiple: true
+  SupportsMultiple: false
 --}}
 
 @php 

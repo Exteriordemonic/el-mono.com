@@ -1,0 +1,14 @@
+.section {
+  $this: &;
+
+  padding-top: $spacer * 5;
+  padding-bottom: $spacer * 5;
+
+  &--offset {
+    padding-bottom: 0;
+
+    #{$this}__offset {
+      margin-bottom: $spacer * -5;
+    }
+  }
+}
