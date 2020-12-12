@@ -1,0 +1,27 @@
+.block-languages {
+  .item {
+    position: relative;
+
+    &:nth-child(2n) {
+      @include media-breakpoint-up(md) {
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 2px;
+          background-color: $white;
+          margin: auto;
+          height: 60%;
+        }
+
+        &::after {
+          left: unset;
+          right: 0;
+        }
+      }
+    }
+  }
+}

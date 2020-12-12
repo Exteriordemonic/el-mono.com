@@ -8,4 +8,14 @@
       object-position: center;
     }
   }
+
+  &--big-image {
+    img,
+    svg {
+      width: $gutter * 16;
+      height: $gutter * 12.5;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
 }
