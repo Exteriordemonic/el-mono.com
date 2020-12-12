@@ -1,0 +1,19 @@
+.img-cover-wrapper {
+  z-index: 10;
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+    margin-bottom: 0;
+    height: 100%;
+  }
+}
+
+.img-cover {
+  width: 100%;
+  height: auto;
+
+  @include media-breakpoint-up(md) {
+    height: 100%;
+    object-fit: cover;
+  }
+}

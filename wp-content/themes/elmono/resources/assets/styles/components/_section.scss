@@ -11,4 +11,10 @@
       margin-bottom: $spacer * -5;
     }
   }
+
+  &-content {
+    @extend .mx-auto;
+
+    max-width: $spacer * 80;
+  }
 }

@@ -13,7 +13,7 @@
     <?php echo $__env->make('partials.empty-block', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php elseif($block_has_content): ?>
 <section class="section <?php echo e($bg); ?> <?php echo e(text_color($bg)); ?> <?php echo e($offset ? 'section--offset' : ''); ?>">
-  <div class="container-xxl overflow-hidden">
+  <div class="container">
     <div class="row <?php echo e($direction); ?> gx-5 gx-xl-10">
       <div class="col-md-6 section__offset">
         <?php if (get_field('image')) : ?>

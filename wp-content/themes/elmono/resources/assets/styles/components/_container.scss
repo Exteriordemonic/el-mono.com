@@ -1,0 +1,5 @@
+.container {
+  &-small {
+    max-width: var(--container-small-width);
+  }
+}

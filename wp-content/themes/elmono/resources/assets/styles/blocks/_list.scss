@@ -1,0 +1,21 @@
+.block-list {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+  .item {
+    line-height: $gutter * 2;
+
+    .dot {
+      width: $gutter * 2;
+      height: $gutter * 2;
+      border-radius: 100%;
+      display: inline-block;
+    }
+  }
+}

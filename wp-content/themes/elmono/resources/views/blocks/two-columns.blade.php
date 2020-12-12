@@ -25,7 +25,7 @@
     @include('partials.empty-block')
 @elseif($block_has_content)
 <section class="section {{ $bg }} {{ text_color($bg) }} {{ $offset ? 'section--offset' : '' }}">
-  <div class="container-xxl overflow-hidden">
+  <div class="container">
     <div class="row {{ $direction }} gx-5 gx-xl-10">
       <div class="col-md-6 section__offset">
         @hasfield('image')

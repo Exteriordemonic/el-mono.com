@@ -12,7 +12,8 @@ $theme-colors: (
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
 
-$spacer: 1rem;
+$spacer: 0.625rem;
+$gutter: 10px;
 
 $spacers: (
   0: 0,
@@ -42,14 +43,7 @@ $gutters: (
   10: ($spacer * 10),
 );
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1440px
-);
-
 :root {
   --navbar-height: 56px;
+  --container-small-width: 1200px;
 }
