@@ -1,0 +1,11 @@
+.icon {
+  &--image {
+    img,
+    svg {
+      width: $gutter * 12;
+      height: $gutter * 8.5;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

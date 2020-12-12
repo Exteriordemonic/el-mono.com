@@ -11,6 +11,7 @@ $options
     ->addSelect('background', ['choices'=> [
       'bg-light' => 'Light',
       'bg-primary' => 'Primary',
+      'bg-white' => 'White',
       'bg-secondary' => 'Secondary',
       'bg-dark' => 'Dark',
     ]])
